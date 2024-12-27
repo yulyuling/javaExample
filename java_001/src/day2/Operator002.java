@@ -11,7 +11,7 @@ public class Operator002 {
 		
 		num1 -= 5; // num1 = num -5;
 		System.out.println(num1);
-		
+		  
 		
 	}
 
