@@ -19,19 +19,16 @@ public class Loop006 {
 		int sum2 = 0;
 		
 		for(int i=1; i<=num; i++) {
-			if(i % 2 == 1);{
+			if(i % 2 == 1) {
 			sum += i;
 		} else {
 			sum2 += i;
 		}
-			for(int j=1; j<=num; j++) {
-				if(j % 2 == 0);
-				sum2 += j;
 		}
 		System.out.println("홀수들의 합 : "+ sum);	
 		System.out.println("짝수들의 합 : "+ sum2);
 		
 		}
 	}
-	}
+
 
