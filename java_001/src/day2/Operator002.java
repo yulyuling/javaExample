@@ -13,6 +13,6 @@ public class Operator002 {
 		System.out.println(num1);
 		  
 		
-	}
+	}+
 
 }
