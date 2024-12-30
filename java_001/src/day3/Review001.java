@@ -25,7 +25,7 @@ public class Review001 {
 		//or_하나라도 true라면 결과는 true
 		System.out.println(true || false); //true
 		System.out.println(false || false); //false		
-	}
+	
 	
 		if(num1 > 5 && num2 > 30) { //true && false
 			System.out.println("실행"); //실행x
@@ -39,4 +39,4 @@ public class Review001 {
 		}	
 	}
 	
-}
+
