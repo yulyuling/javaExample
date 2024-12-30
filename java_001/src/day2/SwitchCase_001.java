@@ -1,6 +1,6 @@
 package day2;
 
-public class switchCase_001 {
+public class SwitchCase_001 {
 
 	public static void main(String[] args) {
 
