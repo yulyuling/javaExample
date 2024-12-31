@@ -56,11 +56,16 @@ public class RandomGugudan2_test {
 //			break;
 		}
 	}
-}
+
 			
 				Random ran = new Random();
 				Scanner scan = new Scanner(System.in);
 				System.out.println("문제 수를 입력해주세요. 0이하 숫자 입력 시 종료됩니다.");
 				
 				int total = scan.nextInt();
-				for(int i=1; i<=total; i++)
+				for(int i=1; i<=total; i++) {
+					
+				}
+				
+				}
+				}

@@ -11,6 +11,7 @@ public class WhileSample001 {
 		
 		int max = 0;
 		
+		
 		while(true) {
 			int input = scan.nextInt();
 			if(input == -1){
