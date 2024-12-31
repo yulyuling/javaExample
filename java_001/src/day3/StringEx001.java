@@ -17,7 +17,9 @@ public class StringEx001 {
 		String input = scan.next();
 		
 		if(input.equals("종료")) { // false가 된다.
-				//==대신 equals라는 메소드를 써야함.
+				//==대신 equals()라는 메소드를 써야함. "종료".equals 도 있음
+				//숫자는 ==쓰면 됨
+			
 			System.out.println("종료되었습니다.");
 		}else {
 		System.out.println("실행 중입니다.");
