@@ -13,17 +13,14 @@ public static void main(String[] args) {
 	
 		
 			
-		for (int j=1; j<=9; j++) {
-				
-			}	int num = scan.nextInt();{
+		int num = scan.nextInt();
+			for (int i=1; i<=9; i++){
 			
-			if(int i == num * j) {
-			}	
-				System.out.println(i + "*" + "j" + "=" + i*j);
-			}
-			
+				System.out.println(num + "*" + i + "=" + num*i);
 		}
-			}
+	}
 }
+
+
 
 
