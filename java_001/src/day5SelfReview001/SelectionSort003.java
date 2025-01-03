@@ -10,7 +10,7 @@ public class SelectionSort003 {
 		int arr[] = {3,5,2,4,1};
 		
 		for(int i=0; i<arr.length-1; i++) { //i가 0일때, 4보다 작으면 증감.
-			int minIndex = 1;
+			int minIndex = i;
 			for(int j=i+1; j<arr.length; j++) { //j가 i보다 하나 클때, j는 길이만큼 증감
 				
 				if(arr[j] < arr[minIndex]) { // j가  min보다 작을때 min에 대입함.
