@@ -1,4 +1,4 @@
-package day5SelfReview001;
+package day5Review001;
 
 import java.util.Arrays;
 
