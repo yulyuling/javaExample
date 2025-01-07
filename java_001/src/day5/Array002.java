@@ -16,9 +16,13 @@ public class Array002 {
 			num = arr[i];
 			
 			System.out.println(num+"star"+"="+Arrays.toString(arr));
+			/**Arrays.toString(arr) 은 배열안의 값을 String으로 변환해서 출력한다.
+			/**1차원 배열이기에 1차원 배열에서만 쓸 수 있다.
+			 * 다차원 배열은 Arrays.deepToString() 을 쓴다.
+			 */
+			 
 			
-			
-		}
+		/*}
 		 * //for1
 		 * 
 		 * for(int i = 0; i<arr.length; i++) { System.out.println(arr[i]); }
