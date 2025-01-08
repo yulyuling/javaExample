@@ -14,7 +14,7 @@ public class ColorPoint001 { //부모클래스
 		 public void showPoint() { // 점의 좌표 출력
 		System.out.println("(" + x + "," + y + ")");
 		 }
-		 }
+	}
 	/*
 	 * 자식 클래스
 	 */
