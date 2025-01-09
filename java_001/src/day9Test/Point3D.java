@@ -12,7 +12,6 @@ public class Point3D extends Point{
 			
 		@Override
 		public String toString() {
-		// TODO Auto-generated method stub
 		return ("(" + getX() + "," + getY() + "," + z + ")" + "의 점" );
 		// 1,2,3은 각각 x, y, z축의 값.
 		}
