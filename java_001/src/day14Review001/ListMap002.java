@@ -15,13 +15,21 @@ public class ListMap002 {
 		//입력받아서 (과일이름,가격,갯수),확인,종료
 		
 		
+		System.out.print("[(1)과일 (2)확인 (3)종료]");
+		int menu = scan.nextInt();
+		
 		while(true) {
-			int menu = scan.nextInt();
-			System.out.print("[(1)과일 (2)확인 (3)종료]");
 			HashMap<String, Object> map = new HashMap<>();
 
 			if(menu == 1) { //과일 이름 넣기!
-			
+							/*1.과일이름 입력받기
+							2.입력받은 이름 map에 넣기
+							3.map을 list에 넣기
+							4.2번을 누르면 list내용 확인하기.
+							4-1 어떻게 확인할건데?
+							4-2 아!! 0부터 끝까지 돌면서 확인
+							5.3번을 누르면 종료하기
+							*/
 				
 				System.out.print("과일 이름: ");
 				String name = scan.next();
@@ -37,12 +45,12 @@ public class ListMap002 {
 				
 				list.add(map);
 				
-//				System.out.println(list);
 			}
 			else if(menu == 2) {
-				HashMap<String, Object> map = new HashMap<>();
+				for(HashMap<String, Object> map2 : list) {
 				System.out.println(map.get("name")+"의 가격은 "+ map.get("price") + "이고, 갯수는 "+ map.get("num") + "입니다");
 				
+				}
 			}
 			else if(menu == 3) {
 				System.out.println("종료되었습니다.");
