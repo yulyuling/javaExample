@@ -24,7 +24,6 @@ public class AnimalMain {
                 System.out.println();
             }
         }
-
 	}
 
 

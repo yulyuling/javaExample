@@ -120,7 +120,7 @@ public class ListMap2 {
 				}
 			}
 		}else if(menu == 4) {//종료
-			
+			break;
 		}else { 
 			//다시 시도
 		}
