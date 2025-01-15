@@ -35,8 +35,8 @@ public class ListMap001 {
 			for(HashMap<String, Object> map2 : list) { //리스트를 돌면서 map2에 넣을거야.
 				if(map2.get("name").equals(map.get("name"))) {   // 이름이 다른지 비교해봐.
 				
-					System.out.println("중복된 이름이 있습니다.");
 					toName = true;
+					System.out.println("중복된 이름이 있습니다.");
 					break;
 				
 				}
@@ -62,19 +62,22 @@ public class ListMap001 {
 			
 			System.out.println("판매할 과일을 입력해주세요 : ");
 			String name1 = scan.next();
-			map.put("name", name1);
+			
 			boolean flg = false;
+			
 			int sell = scan.nextInt();
 			for(HashMap<String, Object> fruit2 : list) {
-				if(fruit2.get("name").equals(map.get("name"))){
+				if(fruit2.get("name").equals(name1)){
 					int sellNum = (int) map.get("num");
 					if(sellNum > 0)
 						map.put("num", sellNum-sell);					
-					
+					} else {
+						System.out.println("0이상의 값을 입력해주세요");
+						
 					flg = true;
-					System.out.println("없는 과일 입니다.");
 					break;
 				}
+				System.out.println("없는 과일 입니다.");
 			}
 			
 		}if(menu == 3) {
@@ -87,8 +90,10 @@ public class ListMap001 {
 			String name2 = scan.next();
 			
 			for(HashMap<String, Object> fruit2 : list) {
+				fruit2.put("name", name);
 				if(fruit2.get("name").equals(map.get("name"))) {
-				System.out.println(fruit2.get("name") + "의 개수는 " + fruit2.get("num") + "개 남았습니다.");
+					map.put("name", fruit2);
+				System.out.println(map.get("name") + "의 개수는 " + map.get("num") + "개 남았습니다.");
 				
 				
 			}
