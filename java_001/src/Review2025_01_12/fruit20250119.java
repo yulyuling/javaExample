@@ -41,7 +41,7 @@ public class fruit20250119 {
 					if(fruit.get("이름").equals(name)) {
 						System.out.println("중복된 이름입니다.");
 						System.out.println("추가 항목 수정을 원하시면 0번을 입력해주세요.");
-						System.out.println("다음으로 넘어가시려면 9번을 입력해주세요.");
+						System.out.println("초기 화면으로 넘어가시려면 9번을 입력해주세요.");
 					
 						int action = scan.nextInt();
 						
