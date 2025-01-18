@@ -17,18 +17,18 @@ public class Fruit {
 			System.out.print("1추가, 2확인, 3수정, 4판매, 5종료");
 			String input = scan.next();
 			
-			if(!input.matches("\\d+")) {
-				System.out.println("숫자만 입력해주세요. 다시 입력해주세요.");
+			if(input.matches("\\d+")) {
+				System.out.println("숫자만 입력해주세요: ");
 				continue;
+			
 			}
-		
-			int menu = Integer.parseInt(input);
+			int menu = Integer.parseInt(input);	
 			
 			if(menu == 1) { //추가
 				
 				HashMap<String, Object> map = new HashMap<>();
 				System.out.print("이름 입력: ");  //이름 입력하라는 문구 출력
-				String name = scan.nextLine();		//스캔으로 이름을 입력받아
+				String name = scan.next();		//스캔으로 이름을 입력받아
 				map.put("이름", name);			//받은 이름을 해시맵에 저장
 			
 				boolean flg = false;//예외규칙 -- 동일 이름이 있을때 걸러내기 위해서 **중복이 없다고 가정**
@@ -150,3 +150,10 @@ public class Fruit {
 	}
 
 }
+
+//if(!input.matches("\\d+")) {
+//System.out.println("숫자만 입력해주세요. 다시 입력해주세요.");
+//continue;
+//}
+//
+//int menu = Integer.parseInt(input);
