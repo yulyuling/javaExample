@@ -1,4 +1,4 @@
-package day16Review;
+package Review2025_01_12;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -17,7 +17,7 @@ public class Fruit {
 			System.out.print("1추가, 2확인, 3수정, 4판매, 5종료");
 			String input = scan.next();
 			
-			if(input.matches("\\d+")) {
+			if(!input.matches("\\d+")) {
 				System.out.println("숫자만 입력해주세요: ");
 				continue;
 			
