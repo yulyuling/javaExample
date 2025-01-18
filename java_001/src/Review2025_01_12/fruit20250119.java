@@ -1,11 +1,11 @@
-package day16Review;
+package Review2025_01_12;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class fruit {
+public class fruit20250119 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -24,7 +24,7 @@ public class fruit {
 			if(!input.matches("\\d+")) { //아닌거니깐 ! 해줘야함 까먹었음 ㅎ
 				
 				System.out.println("잘못된 입력입니다. 다시 입력해주세요.");
-				continue;
+				continue; 
 			}
 			int menu = Integer.parseInt(input);
 			
