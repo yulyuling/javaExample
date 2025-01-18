@@ -10,9 +10,11 @@ public class SelectionSort001 {
 		
 		int arr[] = {3,2,1,4,5};
 		
-		for(int i=0; i<arr.length-1; i++) { //0부터 끝까지 돌리면서 찾는다.
+		//전체위치에서 최소값을 찾아서 가장 작은 값을 찾는거다. 인접한거찾는게 아님.
+		//
+		for(int i=0; i<arr.length-1; i++) { //0부터 끝까지 가장 작은 값을 찾는다.
 			int minIndex = i;				//작은 값(i)을 찾아서 min에 넣는다.
-			for(int j=i+1; j<arr.length; j++) { //j로 i의 다음 배열부터 끝까지 돌면서 작은값찾아
+			for(int j=i+1; j<arr.length; j++) { //j로 i의 다음 배열부터 끝까지 돌면서 최소값을 찾아.
 				if(arr[j] < arr[minIndex]) {//찾은 값은 i랑 비교해서 j에 넣어.
 					minIndex = j;	//j를 작은 값으로 계속 갱신. 갱신값은 min에 넣어
 				}
