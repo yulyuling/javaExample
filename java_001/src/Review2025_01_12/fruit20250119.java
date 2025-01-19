@@ -20,11 +20,10 @@ public class fruit20250119 {
 			System.out.print("1추가, 2확인, 3수정, 4판매, 5종료  ");
 			String input = scan.next();
 			
+			if(!input.matches("\\d+")) {
+				System.out.println("잘못 입력하셨습니다.");
+				continue;
 			
-			if(!input.matches("\\d+")) { //아닌거니깐 ! 해줘야함 까먹었음 ㅎ
-				
-				System.out.println("잘못된 입력입니다. 다시 입력해주세요.");
-				continue; 
 			}
 			int menu = Integer.parseInt(input);
 			
@@ -141,18 +140,19 @@ public class fruit20250119 {
 						int salePrice = scan.nextInt();		//판매개수
 						
 						//값이 string인지 확인하고 반환
-						
-						int stockQuantity = fruit.get("개수")instanceof String
+						//개수x금액
+						//판매금액
+						int stockQuantity = fruit.get("개수") instanceof String
 								? Integer.parseInt(fruit.get("개수").toString())
 								: (int) fruit.get("개수");
 						
-						if(salePrice <= stockQuantity) { //가격도 강제 int화 대신 예외규칙 확인 후 반환
+						 if(salePrice <= stockQuantity) {//가격확인 및 변환
 							int pricePerUnit = fruit.get("가격") instanceof String
-									? Integer.parseInt(fruit.get("가격").toString())
-									: (int) fruit.get("가격");
-							
-							int amount = pricePerUnit * salePrice; //판매금액 계산
-							
+								? Integer.parseInt(fruit.get("가격").toString())
+								: (int) fruit.get("가격");				
+						 
+							int amount = pricePerUnit * salePrice;
+						 
 							System.out.print("받은 금액 입력: ");
 							moneyReceived = scan.nextInt(); //받은금액
 							
@@ -196,3 +196,15 @@ public class fruit20250119 {
 	}
 
 }
+//int stockQuantity = fruit.get("개수")instanceof String
+//? Integer.parseInt(fruit.get("개수").toString())
+//		//valueIfTrue: 조건이 참일 경우 실행할 코드
+//: (int) fruit.get("개수");
+//		//valueIfFalse: 조건이 거짓일 경우 실행할 코드
+//
+//if(salePrice <= stockQuantity) { //가격도 강제 int화 대신 예외규칙 확인 후 반환
+//int pricePerUnit = fruit.get("가격") instanceof String
+//	? Integer.parseInt(fruit.get("가격").toString())
+//			//valueIfTrue: 조건이 참일 경우 실행할 코드
+//	: (int) fruit.get("가격");
+//			//valueIfFalse: 조건이 거짓일 경우 실행할 코드
