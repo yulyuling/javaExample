@@ -23,6 +23,7 @@ public class Review_Test {
 			}
 		}
 		Scanner scan = new Scanner(System.in);
+		boolean flg = false;
 		while(true) {
 			
 			int arr[] = new int [6];
@@ -35,6 +36,14 @@ public class Review_Test {
 					System.out.println("0~100 사이만 입력해라");			
 					break;
 				}
+//				for(int j=1; j<; j++) {
+//					if(arr[i] == arr[j]) {
+//						System.out.println("중복된 값임! 다시 입력 ㄱㄱ");
+//					} else {
+//						break;
+//					}
+//					
+//				}
 				System.out.println(Arrays.toString(arr));
 		}
 			

@@ -14,11 +14,12 @@ public class Human {
 	public boolean setPhone(String phone) {
 		// TODO Auto-generated method stub
 		if(phone.length() == 11) {			
+			return false;
 		} else {
 			System.out.println("핸드폰 번호는 11글자로 입력해주세요. ( - 제외 )");
 			System.out.println("ex) 01012341234");
+			return true;
 		}
-		return false;
 	}
 	@Override
 	public String toString() {
